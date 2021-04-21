@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+  <title>Welcome</title>
+</head>
+<body>
+    <h1>Create New Account</h1>
+    <div class="container">
+          <div id ="main">
+              <div id ="form">
+                <form action="/createUser" method="POST">
+                  USERNAME <input type="text" name="username" required placeholder="enter username"> <br>
+                  PASSWORD <input type="text" name="password" required placeholder="enter password"> <br>
+                  <button type="submit">submit</button>
+                </form>
+                <br></br>
+                <div id ="back">
+                  <p><a href="/create_account">Login Here</a></p>
+                  <p><a href="/">Back to home</a></p>
+                </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
